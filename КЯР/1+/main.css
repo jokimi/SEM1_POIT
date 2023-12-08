@@ -1,0 +1,55 @@
+body {
+    background: url(fon.jpg); 
+    font-family: Bahnschrift;
+}
+
+header { background: #87d0b3; }
+
+h1, nav { text-align: center; }
+
+nav {
+    font-size: 16pt; 
+    background: #8edcbd;
+}
+
+section {
+    font-size: 12pt;
+    background: #92e5c4;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    margin: 25px 5px 5px 5px;
+    text-align: justify;
+    position: absolute;
+    right: 700px;
+}
+
+figure, aside {
+    position: absolute;
+    right: 280px;
+    background: #92e5c4;
+    padding: 10px;
+    width: 370px;
+    float: right;
+    margin: 25px 10px 10px 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    background: #92e5c4;
+    padding: 10px;
+    width: 230px;
+    float: right;
+    margin: 10px 10px 10px 10px;
+    position: absolute;
+    bottom: -28px;
+    right: 5px;
+}
+
+aside {
+    position: absolute; 
+    top: 488px;
+}
+
+span { font-weight: bold; }

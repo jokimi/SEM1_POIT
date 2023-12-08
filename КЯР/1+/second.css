@@ -1,0 +1,24 @@
+body { background: #92e5c4; }
+
+h1 {
+    text-align: center;
+    color: #309030;
+    font-family: 'Bahnschrift';
+    font-size: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bahnschrift';
+}
+
+p { font-family: Garamond; }
+
+h3, span {font-family: 'Bahnschrift';}
+
+.fio {
+    font-style: italic;
+    font-size: 60%;
+}
+
+img { width: 50%; }

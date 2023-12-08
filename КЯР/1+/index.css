@@ -1,0 +1,22 @@
+body { background: #92e5c4; }
+
+h1 {
+    text-align: center;
+    color: #309030;
+    font-family: 'Bahnschrift';
+}
+
+h2, h3, table, ol { font-family: 'Bahnschrift'; }
+
+h1 { font-size: 60px; }
+
+h2 { font-size: 30px; }
+
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+p { text-align: justify; }
+
+.c { text-align: center; }
