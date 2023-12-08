@@ -1,0 +1,71 @@
+body {
+     background: #92e5c4;
+     background-image: url(logo.jpg);
+     background-attachment: fixed;
+     background-position-x: right;
+     background-position-y: top;
+     background-size: 200px 200px;
+     background-repeat: no-repeat;
+}
+h1 {
+     text-align: center;
+     color: #309030;
+     font-family: 'Bahnschrift';
+     font-size: 60px;
+}
+h2, h3, table, ol { font-family: 'Bahnschrift'; }
+h2 {
+     font-size: 30px;
+     text-align: center;
+}
+span {
+     font-style: italic;
+     font-weight: bold;
+}
+p { text-align: justify; }
+.c { text-align: center; }
+#i1 {
+     width: 400px;
+     height: 400px;           
+     float: left;
+     display: block;
+     margin-right: 10px;
+} 
+#i2 {
+     width: 400px;
+     height: 400px;           
+     float: right;
+     display: block;
+     margin-left: 10px;
+} 
+ul li {
+     background-image: url(mark.png);
+     background-repeat: no-repeat;
+     list-style: none;
+     line-height: 25px;
+}
+ul li:before {
+     content:"";
+     width: 30px;
+     height: 30px;
+     margin-right: 30px;
+}
+div.k {height: 420px;}
+div p {
+     text-indent: 30px;
+     margin: 0;
+     padding: 0;
+     font-family: Bahnschrift;
+     font-size: 20px;
+     line-height: 20px;
+}
+a.a {
+     font-family: Bahnschrift;
+     font-size: 200%;
+     font-style: italic;
+}
+nav {
+     text-align: center;
+     padding: 20px 5px 20px 5px;
+     background: #87d0b3;
+}

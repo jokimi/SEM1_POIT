@@ -1,0 +1,36 @@
+table {
+    empty-cells: hide;            
+    border-spacing: 0px;
+    font-family: 'Bahnschrift';
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    padding: 10px 15px;
+    border: 2px ridge rgb(155, 155, 155);
+    text-align: center;
+}
+caption {
+    font-size: 20px;
+    text-align: center;
+}
+.a {
+    background-color: darkblue;
+    border: 1px solid black;
+    color: white;
+}
+.b {
+    background-color: #00bff0;
+    border: 1px solid black;
+    color: white;
+}
+.c {
+    background-color: purple;
+    border: 1px solid black;
+    color: white;
+}
+.d {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+}

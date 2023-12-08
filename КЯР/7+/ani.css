@@ -1,0 +1,299 @@
+body {background: #87d0b3}
+div.a {
+    text-align: center;
+    animation: arounda 3s linear infinite;
+    color: #309030;
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+}
+@keyframes arounda {
+    0% { opacity: 0%; }
+    50% { opacity: 80%; }
+    100% { opacity: 0%; }
+}
+img.i1, img.i2, img.i3, img.i4, img.i5, img.i6, img.i7, img.i8 {
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+}
+img.i1:hover {
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+img.i2:hover {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+img.i3:hover {
+    transform: translate(50px);
+    transition: 0.5s;
+}
+img.i4:hover {
+    transform: skew(-20deg);
+    transition: 0.5s;
+}
+img.i5 { transform: perspective(300px) rotateX(25deg); }
+img.i6 { transform: perspective(300px) rotateY(45deg); }
+img.i7 { transform: perspective(300px) rotateX(25deg); }
+img.i8 { transform: perspective(300px) rotateY(-45deg); }
+form {
+    width: 816px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="button"] { 
+    margin: 0 5px;
+    font-family: 'Bahnschrift';
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+}
+.b1 {
+    background-color: black;
+    color: white;
+}
+.b2 {
+    border: 3px solid red;
+    outline: 3px solid yellow;
+}
+.b3 {
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    border-left: none;
+    border-right: none;
+}
+.b4 {
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    border-top: none;
+    border-bottom: none;
+}
+.b5 {
+    background-image: radial-gradient(yellow, magenta 40%, cyan);
+    border: none;
+}
+img.i {
+    float:left;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    transform-origin: right;
+    margin: 30px 5px;
+}
+.wrapper {
+    position: relative;
+    height: 255px;
+}
+div.ani1 {
+    position: absolute;
+    animation: aroundani1 10s linear infinite;
+}
+@keyframes aroundani1 {
+    0% {
+        transform: perspective(300px) rotateY(45deg);
+        margin-left: 120px;
+    }
+    50% {
+        transform: rotateY(0deg);
+        margin-left: 120px;
+    }
+    100% { transform: translate(120px); }
+}
+div.ani2 {
+    position: absolute;
+    animation: aroundani2 10s linear infinite;
+}
+@keyframes aroundani2 {
+    0% {
+        transform: perspective(300px) rotateY(45deg);
+        margin-left: 150px;
+    }
+    50% {
+        transform: rotateY(0deg);
+        margin-left: 150px;
+    }
+    100% {
+        transform: translate(430px);
+        filter: blur(10px);
+    }
+}
+div.ani3 {
+    position: absolute;
+    animation: aroundani3 10s linear infinite;
+}
+@keyframes aroundani3 {
+    0% {
+        transform: perspective(300px) rotateY(45deg);
+        margin-left: 180px;
+    }
+    50% {
+        transform: rotateY(0deg);
+        margin-left: 180px;
+    }
+    100% {
+        transform: translate(740px);
+        filter: grayscale(1);
+    }
+}
+div.ani4 {
+    position: absolute;
+    animation: aroundani4 10s linear infinite;
+}
+@keyframes aroundani4 {
+    0% {
+        transform: perspective(300px) rotateY(45deg);
+        margin-left: 210px;
+    }
+    50% {
+        transform: rotateY(0deg);
+        margin-left: 210px;
+    }
+    100% {
+        transform: translate(1050px);
+        filter: invert(1);
+    }
+}
+div.ch {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 500px;
+}
+.t1, .t2, .t3, .t4, .t5 {
+    width: 500px; 
+    height: 300px;
+    backface-visibility: hidden;
+    position: absolute;
+    border: 5px solid #309030;
+    border-collapse: collapse;
+}
+.t1 { animation: turn1 5s linear infinite; }
+.t2 { animation: turn2 5s linear infinite; }
+.t3 { animation: turn3 5s linear infinite; }
+.t4 { animation: turn4 5s linear infinite; }
+.t5 { animation: turn5 5s linear infinite; }
+@keyframes turn1 {
+    0% {transform: rotateY(0deg);}
+    20% {transform: rotateY(180deg);}
+    40% {transform: rotateY(180deg);}
+    60% {transform: rotateY(180deg);}
+    80% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+}
+@keyframes turn2 {
+    0% {transform: rotateY(180deg);}
+    20% {transform: rotateY(0deg);}
+    40% {transform: rotateY(180deg);}
+    60% {transform: rotateY(180deg);}
+    80% {transform: rotateY(180deg);}
+    100% {transform: rotateY(180deg);}
+}
+@keyframes turn3 {
+    0% {transform: rotateY(180deg);}
+    20% {transform: rotateY(180deg);}
+    40% {transform: rotateY(0deg);}
+    60% {transform: rotateY(180deg);}
+    80% {transform: rotateY(180deg);}
+    100% {transform: rotateY(180deg);}
+}
+@keyframes turn4 {
+    0% {transform: rotateY(180deg);}
+    20% {transform: rotateY(180deg);}
+    40% {transform: rotateY(180deg);}
+    60% {transform: rotateY(0deg);}
+    80% {transform: rotateY(180deg);}
+    100% {transform: rotateY(180deg);}
+}
+@keyframes turn5 {
+    0% {transform: rotateY(180deg);}
+    20% {transform: rotateY(180deg);}
+    40% {transform: rotateY(180deg);}
+    60% {transform: rotateY(180deg);}
+    80% {transform: rotateY(0deg);}
+    100% {transform: rotateY(180deg);}
+}
+.q {
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+}
+div.o1 { 
+    position: relative;
+    height: 300px;
+    vertical-align: middle;
+    animation: motion1 5s linear infinite;
+} 
+@keyframes motion1 {
+    0% { left: 0; top: 0; }
+    50% { left: 200px; top: 0; }
+    100% { left: 0; top: 0; }
+}
+div.o2 { 
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    vertical-align: middle;
+    animation: motion2 5s linear infinite;
+}
+@keyframes motion2 {
+    0% {left: 0; top: 0;}
+    50% {left: 400px; top: 0; transform: skew(-45deg);}
+    100% {left: 0; top: 0; transform: skew(0deg);}
+}
+div.o3 { 
+    display: inline-block;
+    width: 1100px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    vertical-align: middle;
+    animation: motion3 5s linear infinite;
+}
+@keyframes motion3 {
+    0% {left: -400px; top: 0;}
+    50% {left: 550px; top: 0;}
+    100% {left: 1500px; top: 0;}
+}
+div.o4 { 
+    position: relative;
+    height: 450px;
+    vertical-align: middle;
+    animation: motion4 1s linear infinite; 
+}
+@keyframes motion4 {
+    0% {left: 0; top: 0;}
+    50% {left: 0; top: -50px;}
+    100% {left: 0; top: 0;}
+}
+div.o5 { 
+    position: relative;
+    height: 270px;
+    vertical-align: middle;
+    animation: motion5 5s linear infinite; 
+}
+@keyframes motion5 {
+    0% {left: 0; top: 0;}
+    25% {left: 200px; top: 0;}
+    50% {left: 200px; top: -200px;}
+    75% {left: 0; top: -200px;}
+    100% {left: 0; top: 0;}
+} 
+div.text {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 3px solid #309030;
+    text-align: justify;
+    color: black;
+    animation: blackwhite 5s linear infinite;
+    font-family: 'Bahnschrift';
+    font-size: 15px;
+}
+@keyframes blackwhite {
+    0% {color: black;}
+    50% {color: white;}
+    100% {color: black}
+}
