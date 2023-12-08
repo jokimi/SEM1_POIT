@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Grid</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="two columns"><img src="images/logo.jpg"></div>
+      <div class="ten columns">
+        <a href="html-css-1.html">HTML5/CSS3</a>
+        <a href="html-css-2.html">HTML5/CSS3</a>
+        <a href="photos.html">Фотогалерея</a>
+        <a href="grid-1.html">Grid-вёрстка</a>
+        <a href="grid-2.html">Grid-вёрстка</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns h">Что такое гриды?</div>
+      <div class="three columns h">Основные термины</div>
+      <div class="three columns h">Свойства грид-контейнера</div>
+      <div class="three columns h">Свойства грид-элементов</div>
+    </div>
+    <div class="row">
+      <div class="three columns text">
+        <span class="bold code">CSS Grid Layout (спецификация)</span> или просто <span class="bold code">гриды</span> — это удобная технология для раскладки элементов на веб-страницах. В отличие от флексбоксов, одновременно работающих только с одним измерением, гриды дают возможность работать одновременно с двумя: горизонталью и вертикалью.<br>
+        На заре веба для создания раскладки поинтереснее одноколоночной часто использовались таблицы. Но проблема была в том, что таблицы были сделаны не для этого. Даже если отбросить семантическую нагруженность этого элемента, отдельные свойства для стилизации были крайне неудобными. По сути, это был костыль за неимением более удобных способов. Гриды же изначально были придуманы и реализованы как инструмент для создания раскладки.<br>
+        Принцип работы гридов чем-то похож на таблицы. Вместо работы только с рядами или только с колонками с помощью гридов можно работать с так называемыми грид-ячейками, позиционируя элементы по вертикали и горизонтали одновременно.
+      </div>
+      <div class="three columns text">
+        <span class="bold code">Грид-контейнер</span> — родительский элемент, к которому применяется свойство <span class="code">display: grid</span>.<br>
+        <span class="bold code">Грид-элемент</span> — дочерний элемент, прямой потомок грид-контейнера. Подчиняется правилам раскладки гридов.<br>
+        <span class="bold code">Грид-линия</span> — разделительная линия, формирующая структуру грида. Может быть как вертикальной (грид-линия колонки), так и горизонтальной (грид-линия ряда). Располагается по обе стороны от колонки или ряда. Используется для привязки грид-элементов.<br>
+        <span class="bold code">Грид-ячейка</span> — пространство между соседними грид-линиями. Единица грид-сетки.<br>
+        <span class="bold code">Грид-полоса</span> — пространство между двумя соседними грид-линиями. Может быть проще думать о грид-полосе как о ряде или колонке.<br>
+        <span class="bold code">Грид-область</span> — область, ограниченная четырьмя грид-линиями. Может состоять из любого количества ячеек как по горизонтали, так и по вертикали.
+      </div>
+      <div class="three columns text">
+        <span class="bold code">display</span>: если элементу задано свойство <span class="code">display</span> со значением <span class="code">grid</span>, то такой элемент становится грид-контейнером. Дочерние элементы этого контейнера начинают подчиняться правилам грид-раскладки. Снаружи ведёт себя как блок.<br>
+        <span class="bold code">grid-template-columns</span>, <span class="bold code">grid-template-rows</span>: свойства, задающие размеры и количество колонок или рядов грид-раскладки соответственно.<br>
+        <span class="bold code">grid-auto-columns</span>, <span class="bold code">grid-auto-rows</span>: если элементов внутри грид-контейнера больше, чем может поместиться в заданные явно ряды и колонки, то для них создаются автоматические, неявные ряды и колонки. При помощи этих свойств можно управлять размерами этих автоматических рядов и колонок.<br>
+        <span class="bold code">grid-auto-flow</span>: если грид-элементов больше, чем явно объявленных колонок или рядов, то они автоматически размещаются внутри родителя. А вот каким образом (в ряд или в колонку) можно указать при помощи свойства <span class="code">grid-auto-flow</span>. По умолчанию значение у этого свойства <span class="code">row</span>, лишние элементы будут выстраиваться в ряды в рамках явно заданных колонок.<br>
+        <span class="bold code">grid-template-areas</span>: позволяет задать шаблон сетки расположения элементов внутри грид-контейнера. Имена областей задаются при помощи свойства <span class="code">grid-area</span>. Текущее свойство <span class="code">grid-template-areas</span> просто указывает, где должны располагаться эти грид-области.<br>
+        <span class="bold code">column-gap</span>, <span class="bold code">row-gap</span>: задаёт отступы между колонками или рядами.<br>
+        <span class="bold code">justify-items</span>: свойство, с помощью которого задаётся выравнивание грид-элементов по горизонтальной оси. Применяется ко всем элементам внутри грид-родителя.<br>
+        <span class="bold code">align-items</span>: свойство, с помощью которого можно выровнять элементы по вертикальной оси внутри грид-контейнера.
+      </div>
+      <div class="three columns text">
+        <span class="bold code">Важное замечание</span>: свойства <span class="code">float</span>, <span class="code">display: inline-block</span>, <span class="code">display: table-cell</span>, <span class="code">vertical-align</span> и <span class="code">column-*</span> не дают никакого эффекта, когда применяются к грид-элементам.<br>
+        <span class="bold code">grid-column-start</span>, <span class="bold code">grid-column-end</span>, <span class="bold code">grid-row-start</span>, <span class="bold code">grid-row-end</span>: определяют положение элемента внутри грид-сетки при помощи указания на конкретные направляющие линии.<br>
+        <span class="bold code">grid-column</span>, <span class="bold code">grid-row</span>: свойства-шорткаты для <span class="code">grid-column-start</span>, <span class="code">grid-column-end</span> и <span class="code">grid-row-start</span>, <span class="code">grid-row-end</span> соответственно. Значения для <span class="code">*-start</span> и <span class="code">*-end</span> разделяются слэшем. Можно использовать ключевое слово <span class="code">span</span>, буквально говорящее «растянись на столько-то». А на сколько, указывает стоящая за ним цифра.<br>
+        <span class="bold code">grid-area</span>: свойство, которое может как указывать элементу, какую из именованных областей ему нужно занять, так и служить шорткатом для одновременного указания значений для четырёх свойств: <span class="code">grid-column-start</span>, <span class="code">grid-column-end</span>, <span class="code">grid-row-start</span> и <span class="code">grid-row-end</span>.<br>
+        <span class="bold code">justify-self</span>: с помощью этого свойства можно установить горизонтальное выравнивание для отдельного элемента, отличное от выравнивания, заданного грид-родителю.<br>
+        <span class="bold code">align-self</span>: выравнивает отдельный элемент по вертикальной оси.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

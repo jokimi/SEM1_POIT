@@ -1,0 +1,18 @@
+@import '_vars';
+@import '_content';
+@import '_header';
+@import '_article';
+@import '_aside';
+@import '_footer';
+@font-face {
+    font-family: 'Sniglet-Regular';
+    src: url(fonts/Sniglet-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sniglet-Bold';
+    src: url(fonts/Sniglet-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Exo2';
+    src: url(fonts/Exo2.ttf);
+}

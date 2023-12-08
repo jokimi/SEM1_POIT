@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url(fonts/Exo2.woff);
+   }
+@font-face {
+    font-family: 'Fedra Sans Book';
+    src: url(fonts/FedraSansBook.ttf);
+}
+body {
+    background-color: rgb(249, 249, 249);
+    font-family: 'Exo2';
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 14px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(242, 242, 242);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    background-image: linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .25) 50%,
+                      rgba(255, 255, 255, .25) 75%,
+                      transparent 75%,
+                      transparent);
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 20px;
+}
+.wrapper {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+audio {
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    display: block;
+}
+audio::-webkit-media-controls-panel {
+    background-color: rgb(249, 249, 249);
+}
+.a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    font-family: 'Fedra Sans Book';
+    padding: 10px 0;
+}
+video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+.v {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0;
+    font-family: 'Fedra Sans Book';
+}
+p {
+    display: block;
+    margin: 0 15px;
+    text-align: justify;
+    text-indent: 20px;
+}
+nav {
+    width: 100%;
+    max-width: 100%;
+}
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    background: rgb(230, 230, 230);
+    height: 70px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    background:rgb(230, 230, 230);
+    color: black;
+    padding: 0px 15px;
+    line-height: 70px;
+    display: block;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+}
+a:hover {
+    background: rgb(249, 249, 249);
+}
+li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.icon {
+    height: 80%;
+}
+#title1 {
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+    font-family: 'Trebuchet MS';
+}
+#title2 {
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+.cats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0.75%;
+}
+.cats .pusheen {
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    width: 24.5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.gato {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.text {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    line-height: 200%;
+    padding: 5px 0;
+    color: black;
+}
+#burger, [for=burger] {
+    display: none;
+    text-align: right;
+}
+.section1 {
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    padding: 15px;
+    width: 32.3%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 5px 10px 5px;
+}
+.section2 {
+    padding-top: 15px;
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    width: 32.3%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 5px 10px 5px;
+}
+.section3 {
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    width: 32.3%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 5px 10px 5px;
+}
+@media screen and (max-width: 480px) {
+    .text {
+        color: red;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .logo {
+        display: none;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        width: 90%;
+        height: 100%;
+    }
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+        width: 90%;
+        background: none;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+    a:hover {
+        background-color: black;
+        color: white;
+    }
+    .sections a {
+        text-align: center;
+        height: 100%;
+    }
+    [for="burger"] {
+        display: flex;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        right: 0;
+        font-size: 20px;
+    }
+    [for="burger"]::before {
+        content: "\2630";
+    }
+    #burger:checked + [for="burger"]::before {
+        content: "\2716";
+    }
+    #burger:checked ~ nav {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    #burger:checked ~ nav li {
+        width: 100%;
+        margin: 5px 0;
+    }
+    #burger:hover {
+        cursor: pointer;
+    }
+    .hide {
+        display: none;
+    }
+    #title1 {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    [for="burger"] {
+        display: flex;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        right: 30px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .wrapper {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section1, .section2, .section3 {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section1 {
+        margin-top: 10px;
+    }
+    .section2 {
+        padding-bottom: 15px;
+    }
+    .sections a {
+        text-align: center;
+        height: 100%;
+    }
+    .cats {
+        margin: 0 0 10px 0;
+    }
+}

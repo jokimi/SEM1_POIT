@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url(fonts/Exo2.woff);
+}
+@font-face {
+    font-family: 'Fedra Sans Book';
+    src: url(fonts/FedraSansBook.ttf);
+}
+body { background-color: rgb(249, 249, 249); }
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 530px;
+}
+.grid {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav    main   aside"
+                         "footer footer footer";
+    grid-template-columns: 15% 50% 33.6%;
+    grid-template-rows: 160px 260px 90px;
+    grid-gap: 10px;
+}
+.grid > header, .grid > nav, .grid > article, .grid > aside, .grid > footer {
+    display: grid;
+    font-family: 'Exo2';
+    background: rgb(242, 242, 242);
+    border-radius: 15px;
+}
+h1 {
+    font-weight: bold;
+    line-height: 80%;
+}
+p {
+    text-align: justify;
+}
+nav {
+    text-align: center;
+    place-items: center;
+    padding: 15px 0;
+    font-size: 20px;  
+}
+header {
+    place-items: center justify;
+    padding: 15px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+article, aside {
+    padding: 10px;
+    place-items: center;
+}
+footer {
+    place-items: center;
+    padding: 15px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 30px;
+    font-weight: bold;
+}
+a {
+    display: block;
+    width: 100%;
+}
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    background-color: rgb(249, 249, 249);
+}
+a:visited {
+    color: #a5a1a1;
+    text-decoration: none;
+}

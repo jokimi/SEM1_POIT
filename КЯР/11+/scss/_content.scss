@@ -1,0 +1,30 @@
+body {
+    background-color: $bgcolor;
+    margin: $margin;
+    .container {
+        display: $dblock;
+        margin-left: $cont-margin;
+        margin-right: $cont-margin;
+        width: $big-width;
+        height: fit-content;
+        .grid {
+            display: grid;
+            grid-template-areas: "header header"
+                                 "main   aside"
+                                 "footer footer";
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 160px 665px 90px;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $bgcolor;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(155, 103, 70);
+        border-radius: 20px;
+        border: 3.5px solid $bgcolor;
+    }
+}

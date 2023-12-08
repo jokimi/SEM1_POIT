@@ -1,0 +1,45 @@
+$bgcolor: rgb(252, 240, 228);
+$dblock: block;
+$margin: 10px;
+$padding: 10px;
+$radius: 20px;
+$cont-margin: auto;
+$big-width: 100%;
+$big-height: 100%;
+$font: 'Sniglet-Regular';
+$header: 35px;
+$size: 25px;
+
+@mixin form() {
+    display: $dblock;
+    width: $big-width;
+}
+
+%labels {
+    @include form();
+    float: left;
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+%data {
+    @include form();
+    background-color: rgba(255,255,255,.5);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: 'Exo2';
+}
+
+@function text($t) {
+    @return $t - 20px;
+}
+
+@function link($i, $s) {
+    @if (($i >= 1) and ($i <= 4)) {
+        @return $s;
+    }
+}

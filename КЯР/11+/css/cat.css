@@ -1,0 +1,417 @@
+aside form .field label {
+  display: block;
+  width: 100%;
+  float: left;
+  height: 15px;
+  margin-bottom: 5px;
+}
+
+aside form .field input[type=text], aside form .field input[type=email] {
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: "Exo2";
+}
+
+body {
+  background-color: rgb(252, 240, 228);
+  margin: 10px;
+}
+body .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .container .grid {
+  display: grid;
+  grid-template-areas: "header header" "main   aside" "footer footer";
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 160px 665px 90px;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(252, 240, 228);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(155, 103, 70);
+  border-radius: 20px;
+  border: 3.5px solid rgb(252, 240, 228);
+}
+
+header {
+  background-image: url(../images/for-header.png);
+  display: grid;
+  font-family: "Sniglet-Regular";
+  border-radius: 20px 20px 0 0;
+  align-items: center;
+  padding: 15px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+header nav {
+  width: 100%;
+}
+header nav .head {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  height: 70px;
+  margin-bottom: 10px;
+}
+header nav .head .logo {
+  float: left;
+  position: relative;
+  height: 100%;
+  font-size: 90px;
+  font-family: "Sniglet-Bold";
+  color: rgb(155, 103, 70);
+  text-shadow: 2px 2px 1px #000;
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 15px;
+}
+header nav .head .logo .tm {
+  font-size: 40px;
+  font-family: "Sniglet-Bold";
+}
+header nav .head .networks {
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 200px;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Sniglet-Bold";
+  font-size: 25px;
+}
+header nav .head .networks .links-1 {
+  font-size: 25px;
+}
+header nav .head .networks .links-2 {
+  font-size: 25px;
+}
+header nav .head .networks .links-3 {
+  font-size: 25px;
+}
+header nav .head .networks .links-4 {
+  font-size: 25px;
+}
+header nav .head .networks .links {
+  text-decoration: none;
+  color: rgb(155, 103, 70);
+  text-shadow: 2px 2px 1px #000;
+  line-height: 70px;
+  display: inline-block;
+}
+header nav .head .networks .links:hover, header nav .head .networks .links:active {
+  color: white;
+}
+
+article {
+  display: grid;
+  font-family: "Sniglet-Regular";
+  background: rgb(253, 249, 242);
+  padding: 10px;
+  justify-content: center;
+}
+article h1 {
+  display: block;
+  font-family: "Sniglet-Bold";
+  text-align: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgb(155, 103, 70);
+  margin: 0;
+  font-size: 35px;
+  text-shadow: 2px 2px 1px #000;
+  padding: 15px 0;
+}
+article .about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+article .about .text {
+  box-sizing: border-box;
+  background: rgb(255, 243, 231);
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  width: 32.7%;
+  font-size: 15px;
+}
+article .about .text h2 {
+  display: block;
+  font-family: "Sniglet-Bold";
+  text-align: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgb(155, 103, 70);
+  margin: 0;
+  font-size: 20px;
+  padding: 10px 0;
+}
+article .about .text p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+article .about .text p .profile {
+  font-family: "Sniglet-Bold";
+}
+article .about #justify {
+  text-align: justify;
+}
+article .cats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+article .cats .family {
+  border-radius: 20px;
+  background-color: rgb(255, 243, 231);
+  width: 24.5%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+article .cats .family .gato {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+article .cats .family .fam {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+  font-style: italic;
+}
+
+aside {
+  display: grid;
+  font-family: "Sniglet-Regular";
+  background: rgb(253, 249, 242);
+  padding: 10px;
+  justify-content: center;
+}
+aside h1 {
+  display: block;
+  font-family: "Sniglet-Bold";
+  text-align: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgb(155, 103, 70);
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  text-shadow: 2px 2px 1px #000;
+}
+aside form {
+  display: block;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(255, 243, 231);
+  font-family: "Sniglet-Regular";
+  font-size: smaller;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+}
+aside form h1 {
+  display: block;
+  width: 100%;
+  font-family: "Sniglet-Bold";
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgb(155, 103, 70);
+  margin: 0;
+  font-size: 35px;
+  text-shadow: 2px 2px 1px #000;
+  padding: 15px 0;
+}
+aside form .form-info {
+  text-align: center;
+  display: flex;
+  width: 90%;
+  margin: 0 auto 10px auto;
+  padding: 5px 0;
+  border-radius: 10px;
+  font-size: 10px;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: content-box;
+  color: rgb(155, 103, 70);
+}
+aside form .field {
+  padding-bottom: 15px;
+}
+aside form .field .choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 25px;
+}
+aside form .field .choice input[type=checkbox] {
+  display: flex;
+  width: 3%;
+  height: 20px;
+}
+aside form .field .choice .check {
+  display: block;
+  font-size: 10px;
+  width: 97%;
+  height: 20px;
+  text-align: justify;
+}
+aside form .field input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(155, 103, 70);
+  font-family: "Sniglet-Bold";
+  border: none;
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+}
+aside form .field input[type=submit]:hover {
+  cursor: pointer;
+}
+aside .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0;
+  background-color: rgb(255, 243, 231);
+  padding: 5px 7px;
+  height: 105px;
+}
+aside .contact .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+}
+aside .contact .cont .kitty {
+  width: 10%;
+  height: 100%;
+  display: block;
+  border-radius: 20px 0 0 20px;
+}
+aside .contact .cont .cute {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: 0;
+}
+aside .contact .cont .cute .goto {
+  text-decoration: none;
+  color: rgb(155, 103, 70);
+  height: 100%;
+}
+aside .contact .cont .cute .goto:hover {
+  color: rgb(253, 249, 242);
+  text-shadow: 1px 1px 1px #000;
+}
+
+footer {
+  place-items: center;
+  padding: 15px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Exo2";
+  background: rgb(253, 249, 242);
+  border-top: 2px solid rgb(252, 240, 228);
+  border-radius: 0 0 20px 20px;
+}
+footer nav {
+  width: 100%;
+}
+footer nav .foot {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  height: 40px;
+  margin-bottom: 10px;
+}
+footer nav .foot .name {
+  float: left;
+  position: relative;
+  height: 100%;
+  font-size: 30px;
+  color: rgb(155, 103, 70);
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 15px;
+  line-height: 45px;
+}
+footer nav .foot .student {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  position: relative;
+  height: 100%;
+  width: 250px;
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 45px;
+  border-left: 2px solid rgb(252, 240, 228);
+}
+
+@font-face {
+  font-family: "Sniglet-Regular";
+  src: url(fonts/Sniglet-Regular.ttf);
+}
+@font-face {
+  font-family: "Sniglet-Bold";
+  src: url(fonts/Sniglet-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Exo2";
+  src: url(fonts/Exo2.ttf);
+}

@@ -1,0 +1,6 @@
+@media (min-width: 481px) and (max-width: 768px) {  
+   .text {
+        color: blue !important;
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,41 @@
+body { background-color: rgb(249, 249, 249); }
+@font-face {
+        font-family: 'Exo2';
+        src: url(fonts/Exo2.woff);
+}
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1070px;
+}
+.grid {
+       display: grid;
+       grid-template-columns: 350px 350px 350px;
+       grid-template-rows: 160px 160px 160px;
+       grid-gap: 10px;
+       font-size: 22px;
+}
+.grid > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Exo2';
+        border: 2px solid black;
+}
+.grid .blue {
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        background-color: yellowgreen;
+        color: blue;
+}
+.grid .div {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        background-color: yellowgreen;
+}
+.red {
+        background-color: red;
+}

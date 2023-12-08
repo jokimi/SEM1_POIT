@@ -1,0 +1,86 @@
+article {
+    display: grid;
+    font-family: $font;
+    background: rgb(253, 249, 242);
+    padding: $padding;
+    justify-content: center;
+    h1 {
+        display: $dblock;
+        font-family: 'Sniglet-Bold';
+        text-align: center;
+        width: $big-width;
+        height: fit-content;
+        color: rgb(155, 103, 70);
+        margin: 0;
+        font-size: 35px;
+        text-shadow: 2px 2px 1px #000;
+        padding: 15px 0;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: center;
+        margin: 0;
+        box-sizing: border-box;
+        .text {
+            box-sizing: border-box;
+            background: rgb(255, 243, 231);
+            padding: 15px;
+            text-align: center;
+            border-radius: $radius;
+            width: 32.7%;
+            font-size: 15px;
+            h2 {
+                display: $dblock;
+                font-family: 'Sniglet-Bold';
+                text-align: center;
+                width: $big-width;
+                height: fit-content;
+                color: rgb(155, 103, 70);
+                margin: 0;
+                font-size: 20px;
+                padding: $padding 0;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: text($header);
+                .profile {
+                    font-family: 'Sniglet-Bold';
+                }
+            }
+        }
+        #justify {
+            text-align: justify;
+        }
+    }
+    .cats {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 0 5px 0;
+        .family {
+            border-radius: $radius;
+            background-color: rgb(255, 243, 231);
+            width: 24.5%;
+            max-width: $big-width;
+            box-sizing: border-box;
+            margin-bottom: $margin;
+            .gato {
+                width: $big-width;
+                display: $dblock;
+                border-radius: $radius $radius 0 0;
+            }
+            .fam {
+                display: $dblock;
+                text-align: center;
+                padding: 5px 0;
+                margin: 0;
+                font-style: italic;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-вёрстка</title>
+    <link href="css/flex.css" rel="stylesheet">
+    <link href="css/for-1280.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="photos/icon.png">
+    <style>
+      @import url(css/for-768.css) (min-width: 481px) and (max-width: 768px);
+      @media screen and (max-width: 480px) {
+        .text {
+          color: red;
+          padding-bottom: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <label id="title1">
+      <img class="icon" src="photos/icon.png">
+      Главная
+    </label>
+    <input type="checkbox" id="burger">
+    <label for="burger"></label>
+    <nav class="nav">
+      <ul class="sections">
+        <li class="logo">
+          <img class="icon" src="photos/icon.png">
+        </li>
+        <li>
+          <a href="#1">Рекомендуем посмотреть</a>
+        </li>
+        <li>
+          <a href="#2">Flexbox-вёрстка</a>
+        </li>
+        <li>
+          <a href="#3">Рекомендуем послушать</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="section1" id="1">
+        <div class="article">
+          <video width="295" controls poster="photos/seals.jpg">
+            <source src="videos/saxophone.mp4" type="video/mp4">
+          </video>
+          <figcaption class="v">saxophone</figcaption>
+        </div>
+        <div class="article">
+          <video width="295" controls poster="photos/bees.jpg">
+            <source src="videos/bees.mp4" type="video/mp4">
+          </video>
+          <figcaption class="v">oh no</figcaption>
+        </div>
+        <div class="article">
+          <video width="295" controls poster="photos/pop.jpg">
+            <source src="videos/pop.mp4" type="video/mp4">
+          </video>
+          <figcaption class="v">pop</figcaption>
+        </div>
+      </div>
+      <div class="section2" id="2">
+        <p>CSS Flexbox (Flexible Box Layout Module) — модуль макета гибкого контейнера — представляет собой способ компоновки элементов, в основе лежит идея оси. Flexbox состоит из гибкого контейнера (flex container) и гибких элементов (flex items). Гибкие элементы могут выстраиваться в строку или столбик, а оставшееся свободное пространство распределяется между ними различными способами.</p>
+        <p>Flexbox позволяет: располагать элементы в одном из четырех направлений (слева направо, справа налево, сверху вниз или снизу вверх); переопределять порядок отображения элементов; автоматически определять размеры элементов таким образом, чтобы они вписывались в доступное пространство; решать проблему с горизонтальным и вертикальным центрированием; переносить элементы внутри контейнера, не допуская его переполнения.</p>
+        <p>CSS Flexbox поддерживается всеми используемыми на сегодняшний момент современными браузерами (с использованием префиксов: IE10+, Edge12+, Firefox 2+, Chrome 4+, Safari 3.1+, Opera 12.1+, iOS Safari 3.2, Opera mini, Android 2.1+, Blackberry 7+).</p>
+        <p>Очень важный момент: Flexbox независим от направления, в отличие от обычных шаблонов. Пока это достаточно хорошо работало на простых страницах (и сайтах), эти недостатки в гибкости довольно сильно влияли на поддержку больших и сложных приложений, особенно когда дело касалось смены ориентирования, ресайзинга, растягивания или наоборот сокращения элементов.</p>
+      </div>
+      <div class="section3" id="3">
+        <div class="article">
+          <audio controls>
+            <source src="audios/crabs.mp3" type="audio/mp3">
+          </audio>
+          <figcaption class="a">crab rave</figcaption>
+        </div>
+        <div class="article">
+          <audio controls>
+            <source src="audios/stars.mp3" type="audio/mp3">
+          </audio>
+          <figcaption class="a">shooting stars</figcaption>
+        </div>
+        <div class="article">
+          <audio controls>
+            <source src="audios/rhapsody.mp3" type="audio/mp3">
+          </audio>
+          <figcaption class="a">bohemian rhapsody</figcaption>
+        </div>  
+      </div>
+      <div class="cats">
+        <label id="title2">Pusheen</label>
+        <div class="pusheen">
+          <img src="photos/1.jpg" class="gato">
+          <figcaption class="text">мороженко</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/2.jpg" class="gato">
+          <figcaption class="text">пончик с кофеёчком</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/3.jpg" class="gato">
+          <figcaption class="text">ура, праздник</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/4.jpg" class="gato">
+          <figcaption class="text">зовите меня "крутой"</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/5.jpg" class="gato">
+          <figcaption class="text">sisters на пляже</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/6.jpg" class="gato">
+          <figcaption class="text">наелся и спит</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/7.jpg" class="gato">
+          <figcaption class="text">везём подарочки</figcaption>
+        </div>
+        <div class="pusheen">
+          <img src="photos/8.jpg" class="gato">
+          <figcaption class="text">пикник такой, своеобразный</figcaption>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>

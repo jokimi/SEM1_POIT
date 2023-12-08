@@ -1,0 +1,68 @@
+body { background-color: rgb(249, 249, 249); }
+@font-face {
+      font-family: 'Exo2';
+      src: url(fonts/Exo2.woff);
+}
+@font-face {
+      font-family: 'Fedra Sans Book';
+      src: url(fonts/FedraSansBook.ttf);
+}
+.container {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 910px;
+      height: 715px;
+}
+.grid {
+      display: grid;
+      grid-template-columns: repeat(5, 170px);
+      grid-template-rows: repeat(4, 170px);
+      grid-gap: 15px;
+}
+.grid > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Exo2';
+      background: rgb(244, 244, 244);
+      border-radius: 20px;
+}
+.grid .photo {
+      display: block;
+      text-align: center;
+}
+.grid .gif {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: 11px;
+      grid-row: span 2;
+      grid-column: span 2;
+}
+.img {
+      width: 100px;
+      height: 100px;
+      padding: 15px 10px; 
+      border-radius: 20px;
+}
+.gifimg {
+      width: 335px;
+      height: 335px;
+      border-radius: 20px;
+}
+.meme {
+      width: 335px;
+      height: 209px;
+      padding: 5px 0 10px;
+      border-radius: 20px;
+}
+p { font-style: italic; }
+figcaption {
+      font-size: 12px;
+      font-family: 'Fedra Sans Book';
+}
+.yum {
+      font-size: 12px;
+      font-family: 'Exo2'
+}

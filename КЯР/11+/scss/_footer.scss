@@ -1,0 +1,49 @@
+footer {
+    place-items: center;
+    padding: 15px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30px;
+    font-weight: bold;
+    $footer-font: 'Exo2';
+    font-family: $footer-font;
+    background: rgb(253, 249, 242);
+    border-top: 2px solid $bgcolor;
+    border-radius: 0 0 $radius $radius;
+    nav {
+        width: $big-width;
+        .foot {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            height: 40px;
+            margin-bottom: $margin;
+            .name {
+                float: left;
+                position: relative;
+                height: $big-height;
+                font-size: 30px;
+                color: rgb(155, 103, 70);
+                display: flex;
+                align-items: center;
+                padding: 10px 0 10px 15px;
+                line-height: 45px;
+            }
+            .student {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: right;
+                position: relative;
+                height: $big-height;
+                width: 250px;
+                padding: 10px 0;
+                font-size: 15px;
+                line-height: 45px;
+                border-left: 2px solid $bgcolor;
+            }
+        }
+    }
+}

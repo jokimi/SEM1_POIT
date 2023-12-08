@@ -1,0 +1,55 @@
+body { background-color: rgb(249, 249, 249); }
+@font-face {
+      font-family: 'Exo2';
+      src: url(fonts/Exo2.woff);
+}
+.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 570px;
+}
+.grid {
+      display: grid;
+      grid-template-columns: 50px 250px 250px;
+      grid-template-rows: 160px 160px 160px;
+      grid-gap: 10px;
+      font-size: 22px;
+}
+.grid > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Exo2';
+      border: 2px solid black;
+      background: rgb(230, 230, 230);
+}
+.grid .div1 {
+      writing-mode: vertical-lr; 
+      text-orientation: upright;   
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      font-weight: bold;
+      text-align: center;
+      background: rgb(220, 220, 220);
+}
+.grid .div2 {
+      text-align: center;
+      padding: 10px;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      font-size: 16px;
+}
+.grid .div3 {
+      text-align: center;
+      font-size: 16px;
+      padding: 10px;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+}
