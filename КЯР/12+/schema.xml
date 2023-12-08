@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="body">
+    <xs:element name="container">
+      <xs:element name="grid">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="head">
+              <xs:element name="bar">
+                <xs:element name="logo" type="xs:string"/>
+              </xs:element>
+            </xs:element>
+            <xs:element name="article">
+              <xs:element name="main">
+                <xs:element name="cute">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="molang" type="xs:string"/>
+                      <xs:element name="info" type="xs:string"/>
+                      <xs:element name="photo">
+                        <xs:element name="first" type="xs:string"/>
+                      </xs:element>
+                      <xs:element name="photo">
+                        <xs:element name="second" type="xs:string"/>
+                      </xs:element>
+                      <xs:element name="photo">
+                        <xs:element name="third" type="xs:string"/>
+                      </xs:element>
+                      <xs:element name="photo">
+                        <xs:element name="fourth" type="xs:string"/>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:element>
+            </xs:element>
+            <xs:element name="bottom">
+              <xs:element name="bar">
+                <xs:element name="bunny" type="xs:string"/>
+              </xs:element>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:element>
+  </xs:element>
+</xs:schema>

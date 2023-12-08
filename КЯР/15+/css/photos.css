@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 780px;
+    height: fit-content;
+    margin: 0 auto;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 220px;
+    margin: 25px;
+    box-sizing: border-box;
+    background-color: rgb(240, 240, 240);
+}
+img {
+    display: block;
+}
+#desc {
+    width: 320px;
+    height: 180px;
+    margin: 0 25px;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+    top: -25px;
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

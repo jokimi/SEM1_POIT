@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Оформить заказ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="send">
+        <header>Регистрация и покупка</header>
+        <aside>
+          <h3>Получатель</h3>
+          <label>Имя</label>
+          <input  type="text" name="name" id="input1" placeholder="Иван">
+          <label>Фамилия</label>
+          <input type="text" name="name" id="input2" placeholder="Иванов">
+          <label>Телефон</label>
+          <input type="tel" name="name" id="input3" placeholder="+375 29 222-22-22">
+          <label>E-mail</label>
+          <input type="email" name="name" id="input4" placeholder="ivanovivan@gmail.com">
+        </aside>
+        <main>
+          <h3>Адрес доставки</h3>
+          <label>Страна</label>
+          <select name="name" id="input5">
+            <option>Выберите страну проживания</option>
+            <option>Беларусь</option>
+            <option>Россия</option>
+            <option>Украина</option>
+            <option>Польша</option>
+            <option>Литва</option>
+            <option>Латвия</option>
+          </select>
+          <label>Город</label>
+          <input type="text" name="name" id="input6" placeholder="Минск">
+          <label>Индекс</label>
+          <input type="text" name="name" id="input7" placeholder="220000">
+          <label>Адрес</label>
+          <input type="text" name="name" id="input8" placeholder="ул. Белорусская, 17, кв. 20">
+        </main>
+        <article>
+          <button type="button" id="click">Заказать</button>
+        </article>
+      </form>
+      <footer id="footer"></footer>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>

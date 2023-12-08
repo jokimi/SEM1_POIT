@@ -1,0 +1,41 @@
+body {
+    background: #92e5c4;
+    h1, h2, h3 {
+        text-align: center;
+        color: purple;
+        font-family: 'Monotype Corsiva';
+    }
+    h1 {font-size: 60px;}
+    h2 {font-size: 30px;}
+    p {text-align: justify;
+        .f {
+            font-style: italic; font-weight: bold;
+        }
+    }
+    table {
+        font-family: Bahnschrift;
+        .c {text-align: center;}
+    }
+    ol {
+        li {
+            font-family: Bahnschrift;
+            ul {
+                .a {
+                    color: red;
+                    font-family: 'Times New Roman';
+                    font-size: 18pt;
+                }
+                .b {
+                    color: yellow;
+                    font-family: 'Times New Roman';
+                    font-size: 20pt;
+                }
+                .v {
+                    color: green;
+                    font-family: 'Times New Roman';
+                    font-size: 22pt;
+                }
+            }
+        }
+    }
+}

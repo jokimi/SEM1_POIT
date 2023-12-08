@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/bunny.css"?>
+<body>
+  <container>
+    <grid>
+      <head>
+        <bar>
+          <logo/>
+        </bar>
+      </head>
+      <article>
+        <main>
+        <cute>
+          <molang>ABOUT MOLANG</molang>
+          <info>Born out of the encounter of two women with very different universes, Molang and Piu Piu started life in 2010 as doodles by Hye Ji Yoon, a young and talented Korean illustrator. French author and director Marie-Caroline Villand felt in love with the two adorable characters, and started to develop their personalities, values, universe and stories. The TV series that she created is now a worldwide hit, with over 300 episodes broadcasted in 194 countries. Molang is also a viral sensation, with over 20 Billion views on GIPHY and 6 million social media followers, and a lifestyle brand with a successful consumer products program, supported by our molang.com e-shop and 15 international licensing and merchandising agents.</info>
+          <photo>  
+            <first/>
+          </photo>
+          </cute>
+          <cute>
+          <molang>WHAT DEFINES MOLANG?</molang>
+          <info>Kind and affectionate MOLANG has a unique, instantly recognizable style. Molang is all about empathy, softness, tenderness and joy. MOLANG has no nationality, is ageless and gender-neutral. MOLANG cares for everyone and everything. Everybody loves MOLANG. MOLANG loves everybody.</info>
+          <photo>  
+            <second/>
+          </photo>
+          </cute>
+          <cute>
+          <molang>MOLANG SERIES</molang>
+          <info>The series chronicles the relationship between roommates and best friends Molang, an enthusiastic and optimistic rabbit, and Piu Piu, a timid but outgoing chicken, as they pit their wits against numerous occurrences ranging from everyday problems and sitcom-style situations to extraordinary adventures that often turn dangerous and/or risky.</info>
+          <photo>  
+            <third/>
+          </photo>
+          </cute>
+          <cute>
+          <molang>MERCHANDISING</molang>
+          <info>As a merchandising brand, Molang uses "My Best Friend" as a universal signature for all worldwide licensees, on all packagings. It now represents two master toy licensees (Tomy and Jazwares), over 100 licensees worldwide, and more than 700 different products, including kids and adults apparels, children's books and magazines, stationery, magnets, stickers, underwear, sleepwear, etc.</info>
+          <photo>  
+            <fourth/>
+          </photo>
+          </cute>
+        </main>
+      </article>
+      <bottom>
+        <bar>
+          <bunny/>
+        </bar>
+      </bottom>
+    </grid>
+  </container>
+</body>

@@ -1,0 +1,45 @@
+body {
+  background: #92e5c4;
+}
+body h1, body h2, body h3 {
+  text-align: center;
+  color: purple;
+  font-family: "Monotype Corsiva";
+}
+body h1 {
+  font-size: 60px;
+}
+body h2 {
+  font-size: 30px;
+}
+body p {
+  text-align: justify;
+}
+body p .f {
+  font-style: italic;
+  font-weight: bold;
+}
+body table {
+  font-family: Bahnschrift;
+}
+body table .c {
+  text-align: center;
+}
+body ol li {
+  font-family: Bahnschrift;
+}
+body ol li ul .a {
+  color: red;
+  font-family: "Times New Roman";
+  font-size: 18pt;
+}
+body ol li ul .b {
+  color: yellow;
+  font-family: "Times New Roman";
+  font-size: 20pt;
+}
+body ol li ul .v {
+  color: green;
+  font-family: "Times New Roman";
+  font-size: 22pt;
+}

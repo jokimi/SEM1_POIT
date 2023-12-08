@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="path.css" type="text/css">
+    <title>Текст</title>
+  </head>
+  <body>
+    <svg
+      width="400"
+      height="420"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <path
+          id="textpath"
+          fill="none"
+          stroke="#000000"
+          d="M80,170 C190,280 290,210 260,150 S460,110 360,170"
+        />
+      </defs>
+      <use xlink:href="#textpath" />
+      <text x="10" y="100" class="path">
+        <textPath xlink:href="#textpath">текст текст текст текст текст</textPath>
+      </text>
+    </svg>
+  </body>
+</html>
