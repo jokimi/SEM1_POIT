@@ -1,0 +1,26 @@
+body {background: #87d0b3}
+h1 {
+    text-align: center;
+    color: #309030;
+    font-family: 'Bahnschrift';
+    font-size: 60px;
+   }
+img {
+     padding: 5px 0 0 0;
+     width: 313px;
+     height: 220px;
+    }
+figure {
+        background: #92e5c4; 
+        padding: 10px; 
+        display: block;
+        width: 22.25%; 
+        float: left;
+        margin: 10px 10px 10px 10px; 
+        text-align: center; 
+       }
+figcaption {
+            font-size: 17px;
+            font-family: 'Bahnschrift';
+            padding: 5px 0 0 0;
+           }

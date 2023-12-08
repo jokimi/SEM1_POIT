@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <title>Блочная модель</title>
+  <style>
+    body div {
+              display: inline-block;
+              width: 60px;
+              height: 70px;
+              margin: 10px;
+              text-align: center;
+              font-size: 45px;
+              font-family: 'Bahnschrift';
+             }
+    #r {
+        border: 8px inset rgb(255, 0, 0);
+        padding: 20px 10px 0px 10px;
+       }
+    #g {
+        border: 8px dashed rgb(36, 250, 7);
+        padding: 20px 10px 0px 10px;
+       }
+    #b {
+        border: 8px dotted rgb(11, 7, 250);
+        padding: 20px 10px 0px 10px;
+       }
+    #c {
+        border: 8px double rgb(7, 250, 230);
+        padding: 20px 10px 0px 10px;
+       }
+    #m {
+        border: 8px ridge rgb(250, 7, 189);
+        padding: 20px 10px 0px 10px;
+       }
+    #y {
+        border: 8px outset rgb(250, 246, 7);
+        padding: 20px 10px 0px 10px;
+       }
+    #k {
+        border: 8px solid rgb(0, 0, 0);
+        padding: 20px 10px 0px 10px;
+       }
+    span {
+          padding: 5px;
+          background-color:#FFA500 ;
+          border: solid #FF4500;
+         }
+    p {
+       line-height: 150%;
+       font-family: 'Bahnschrift';
+      }
+    p.p1 {
+          width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+          border: 5px solid #FF7F50;
+         }
+    p.p2 {
+          border: 5px solid rgb(255, 0, 0);
+          border-radius: 20px/40px;
+          box-shadow: inset 2px 2px 8px 8px rgba(0,0,0,.5);
+          overflow: auto;
+         }
+    p.p3 {border: 5px solid #FF6347;}
+  </style>
+</head>
+<body>
+  <div id="r">R</div>
+  <div id="g">G</div>
+  <div id="b">B</div>
+  <div id="c">C</div>
+  <div id="m">M</div>
+  <div id="y">Y</div>
+  <div id="k">K</div> 
+  <p class="p1"><span>RGB</span> (аббревиатура английских слов red, green, blue — красный, зелёный, синий) или КЗС — аддитивная цветовая модель, описывающая способ кодирования цвета для цветовоспроизведения с помощью трёх цветов, которые принято называть основными. Выбор основных цветов обусловлен особенностями физиологии восприятия цвета сетчаткой человеческого глаза.</p>
+  <p class="p2">RGB-модель является <span>аддитивной</span>, где цвета получаются путём добавления к чёрному цвету. При отсутствии излучения — нет никакого цвета — чёрный, смешение всех трёх в определённой пропорции — даёт белый.</p>
+  <p class="p3">Изображение в данной цветовой модели состоит из <span>трёх каналов</span>. При смешении основных излучений, например, синего (B) и красного (R), получается пурпурный (M, magenta), зелёного (G) и красного (R) — жёлтый (Y, yellow), зелёного (G) и синего (B) — циановый (С, cyan). При смешении всех трёх основных излучений получается белый цвет (W, white).</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <title>Хорьки</title>
+  <style>
+    @font-face {
+                font-family: 'Carveat';
+                src: url(fonts/Caveat.woff);
+               }
+    @font-face {
+                font-family: 'Exo2';
+                src: url(fonts/Exo2.woff);
+               }
+    @font-face {
+                font-family: 'Comfortaa';
+                src: url(fonts/Comfortaa.woff);
+               }
+    body {background-color: rgba(255, 181, 7, 0.263);}
+    h1 {
+        font-family:'Carveat';
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 45px;
+        margin-bottom: 0;
+        text-shadow: 1px 1px 2px rgb(246, 173, 2);
+       }
+    .c1 {
+        font-family: 'Exo2';
+        text-align: left;
+        margin-top: 0.2rem;
+        margin-bottom: 1.2em;
+        text-indent: 25px;
+       }
+    p {
+       font-family: 'Comfortaa';
+       text-indent: 25px;
+       font-size: 20px;
+       text-align: justify;
+       margin-bottom: 0;
+       margin-top:0;
+       line-height: 200%;
+      }
+    p::first-letter {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 45px;
+                    background-color: hsla(275, 100%, 10%, 1);
+                   }
+    ol li {
+           list-style-type: none;
+           counter-increment: item;
+           font-family: 'Comfortaa';
+           font-size: 20px;
+           margin-top: 0;
+           margin-bottom: 0;
+          }
+    li::marker {
+                content: counter(item, upper-roman) ". ";
+                color: blue;
+                font-family: 'Comfortaa';
+                font-size: 20px;
+               }
+    #abc {
+          font-family: 'Exo2';
+          text-align: left;
+          margin-top: 0.2rem;
+          margin-bottom: 0;
+          text-indent: 25px;
+         }
+    #ol {margin-top: 0}
+  </style>
+</head>
+<body>
+  <h1>Хорёк</h1>
+  <h2 class="c1">Краткое описание</h2>
+    <p>Хорек — это хищный зверек небольшого размера, который представляет семейство «куньи». Кроме того, что это животное ловкое и проворное, оно обладает задатками разума, поэтому завоевало огромное количество поклонников. Эти животные были одомашнены с незапамятных времен, поэтому живут рядом с человеком, принося только пользу. Особый интерес представляют дикие собратья, которые распространены по всей планете.</p>
+    <p>Существует несколько разновидностей хорьков, которые мало чем отличаются друг от друга. При этом следует отметить, что каждая разновидность имеет свои особенности.</p>
+  <h2 class="c1">Внешний вид</h2>
+    <p>Хорек – это небольшое животное, внешний вид которого отличается гибкостью и изяществом. Несмотря на то, что ноги у зверька достаточно короткие, они у него мускулистые и сильные. Окрас хорьков может быть разнообразным, начиная от светлых оттенков и заканчивая темными, практически черными. При этом туловище всегда темнее, по сравнению с остальными частями тела. Расцветка мордочки такова, что складывающийся узор больше напоминает маску. Шерсть у животного сравнительно длинная, но пушистая, при этом шерстинки у основания несколько светлее, нежели на концах.</p> 
+  <h2 id="abc">Враги хорьков:</h2>
+  <ol id="ol">
+    <li>волки;</li>
+    <li>лисы;</li>
+    <li>рыси;</li>
+    <li>беркуты;</li>
+    <li>филины.</li>
+  </ol>    
+</body>
+</html>
